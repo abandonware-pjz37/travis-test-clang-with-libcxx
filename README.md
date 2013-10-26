@@ -7,3 +7,7 @@
 
 **Note**:
 for clang.3-2 install see [this](https://github.com/travis-ci-tester/travis-test-clang-3.2)
+
+Mac clang `libcxx`:
+* `mac.clang` (**passed**: support by default):
+[![Build Status](https://travis-ci.org/travis-ci-tester/travis-test-clang-with-libcxx.png?branch=mac.clang)](https://travis-ci.org/travis-ci-tester/travis-test-clang-with-libcxx)
