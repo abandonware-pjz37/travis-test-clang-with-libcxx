@@ -4,5 +4,12 @@ language:
 compiler:
     - clang
 
+before_install:
+    - sudo add-apt-repository --yes ppa:h-rayflood/llvm # add clang++-3.2
+    - sudo apt-get -qq update
+
+install:
+    - sudo apt-get -qq install clang-3.2
+
 script:
-    - clang++ -std=c++11 -stdlib=libc++ test.cpp -o prog && ./prog
+    - clang++-3.2 -std=c++11 -stdlib=libc++ test.cpp -o prog && ./prog
